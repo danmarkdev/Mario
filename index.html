@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Rico & The Brickland Hills</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Rico &amp; The Brickland Hills</h1>
+<div class="subtitle">an original 8-bit plumber quest</div>
+
+<div id="hud">
+  <div class="hud-item">SCORE <span id="scoreVal">000000</span></div>
+  <div class="hud-item">COINS <span id="coinVal">00</span></div>
+  <div class="hud-item">WORLD <span id="worldVal">1-1</span></div>
+  <div class="hud-item lives">LIVES <span id="livesVal">3</span></div>
+  <div class="hud-item">TIME <span id="timeVal">400</span></div>
+  <button id="muteBtn" aria-label="Toggle music and sound">🔊</button>
+</div>
+
+<div id="gameWrap">
+  <canvas id="game" width="800" height="450"></canvas>
+  <div id="msgOverlay">
+    <h2 id="msgTitle">Rico &amp; The Brickland Hills</h2>
+    <p id="msgText">Rico the plumber needs to cross the Brickland Hills, stomp the Snurples, grab every coin, and reach the flagpole before time runs out. Clear all three worlds to win!</p>
+    <button id="msgBtn">START GAME</button>
+  </div>
+
+  <div id="touchControls">
+    <div class="tc-group">
+      <div class="tc-btn" id="tcLeft">&larr;</div>
+      <div class="tc-btn" id="tcRight">&rarr;</div>
+    </div>
+    <div class="tc-group">
+      <div class="tc-btn" id="tcRun">RUN</div>
+      <div class="tc-btn" id="tcJump">JUMP</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
